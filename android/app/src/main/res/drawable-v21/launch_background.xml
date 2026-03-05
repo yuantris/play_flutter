@@ -1,12 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Modify this file to customize your launch splash screen -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="?android:colorBackground" />
+    <item android:drawable="@drawable/gradient_background" />
 
-    <!-- You can insert your own image assets here -->
-    <!-- <item>
+    <item
+        android:width="300dp"
+        android:height="300dp"
+        android:gravity="top|left">
+        <shape android:shape="oval">
+            <solid android:color="#30FFFFFF" />
+        </shape>
+    </item>
+
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:bottom="100dp"
+        android:end="50dp"
+        android:gravity="bottom|right">
+        <shape android:shape="oval">
+            <solid android:color="#25FFFFFF" />
+        </shape>
+    </item>
+
+    <item
+        android:width="150dp"
+        android:height="150dp"
+        android:end="30dp"
+        android:gravity="top|right"
+        android:top="80dp">
+        <shape android:shape="oval">
+            <solid android:color="#20FFFFFF" />
+        </shape>
+    </item>
+
+    <item
+        android:width="100dp"
+        android:height="100dp"
+        android:bottom="60dp"
+        android:gravity="bottom|left"
+        android:start="40dp">
+        <shape android:shape="oval">
+            <solid android:color="#35FFFFFF" />
+        </shape>
+    </item>
+
+    <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/launch_image" />
-    </item> -->
+            android:src="@mipmap/ic_launcher" />
+    </item>
 </layer-list>
